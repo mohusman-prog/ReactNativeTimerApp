@@ -49,7 +49,7 @@ const TimerItem = ({ timer, onUpdateTimer }) => {
               },
             });
 
-            setCompletionModalVisible(true); // Show completion modal
+            setCompletionModalVisible(true); 
             return {
               ...prevTimer,
               remainingTime: 0,
@@ -93,7 +93,7 @@ const TimerItem = ({ timer, onUpdateTimer }) => {
         <Button title="Reset" onPress={() => setLocalTimer({ ...localTimer, remainingTime: timer.duration, status: 'stopped' })} color="#FF0000" />
       </View>
 
-      {/* Halfway Modal */}
+      
       <Modal
         visible={isHalfwayModalVisible}
         transparent
@@ -110,7 +110,6 @@ const TimerItem = ({ timer, onUpdateTimer }) => {
         </View>
       </Modal>
 
-      {/* Completion Modal */}
       <Modal
         visible={isCompletionModalVisible}
         transparent

@@ -5,7 +5,7 @@ import { useTimer } from '../context/TimerContext';
 const HistoryScreen = () => {
   const { state } = useTimer();
 
-  console.log('History:', state.history); // Debugging
+  console.log('History:', state.history); 
 
   return (
     <ScrollView style={styles.container}>
